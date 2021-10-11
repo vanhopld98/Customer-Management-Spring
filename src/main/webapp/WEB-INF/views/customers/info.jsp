@@ -2,7 +2,7 @@
 <%@ page import="cg.wbd.grandemonstration.service.CustomerServiceFactory" %>
 <%@ page import="cg.wbd.grandemonstration.model.Customer" %>
 
-<form action="/customers" method="post">
+<form action="/customers/${customer.id}" method="post">
 <fieldset>
     <legend>Customer Information</legend>
     <input type="hidden" name="id" value="${customer.id}">
